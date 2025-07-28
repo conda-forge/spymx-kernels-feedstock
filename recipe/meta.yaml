@@ -1,5 +1,5 @@
 {% set name = "spymx-kernels" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 9c500f94cdf1f6abf106c207c0b511c3ab0c0d1728b2914409eb4b9bfae19ea5
+  sha256: 53dd29687033bf2f0f0b4e292de8b47da95626f73f54e2f35c6ddb1829f4c17f
 
 build:
   noarch: python
@@ -18,6 +18,7 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools
   run:
     - python >={{ python_min }}
     - spyder-kernels >=1.8.1
