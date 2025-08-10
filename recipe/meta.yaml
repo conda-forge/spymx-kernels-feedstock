@@ -1,5 +1,5 @@
 {% set name = "spymx-kernels" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 320d7d9c4b9e77f9305fd61efd422ac276ee11fce0acc95547430e206ea0b03d
+  sha256: 2a3bbfbe4d288387252dc4fba21cdb5e79b45f1342b0738ce204f2ed455cf9a7
 
 build:
   noarch: python
